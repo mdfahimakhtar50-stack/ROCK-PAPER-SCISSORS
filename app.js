@@ -13,7 +13,7 @@ const showWinner = (userWin , userChoice , compChoice) => {
         userScorePara.innerText = userScore;
     }
     else{
-        msg.innerText = `you lost . ${compChoice} beats${userChoice}`;
+        msg.innerText = `you lost . ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor = "red";
         compScore++;
         compScorePara.innerText = compScore;
@@ -24,6 +24,7 @@ const showWinner = (userWin , userChoice , compChoice) => {
 //draw condition
 const drawGame = () => {
     console.log("game was draw. ");
+    msg.style.backgroundColor = "#0F0326";
     msg.innerText = "it's a draw. play again ?";
 }
 
